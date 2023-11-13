@@ -58,9 +58,19 @@ const App: React.FC = () => {
       .catch((err) => console.log(err))
   }
 
-  return (
+  return (<>
+    <div className='main'>
+    
+    <div className='aan'>
+      <div className="wrapper">
+        <div className="container">
+          <h1 className='heading'>My Todos</h1>
+
+        </div>
+      </div>
+    </div>
     <main className='App'>
-      <h1>My Todos</h1>
+      {/* <h1>My Todos</h1> */}
       <AddTodo saveTodo={handleSaveTodo} />
       {todos.map((todo: ITodo) => (
         <TodoItem
@@ -71,6 +81,9 @@ const App: React.FC = () => {
         />
       ))}
     </main>
+    </div>
+    
+    </>
   )
 }
 

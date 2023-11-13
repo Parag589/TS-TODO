@@ -9,15 +9,31 @@ body {
     font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    background: #333;
+    color: #ffffff;
+    background: #bbcece86;
 }
 
 .App {
     max-width: 728px;
     margin: 4rem auto;
+    border-width: 100px;
 }
 
+.main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 8%;
+    height: auto;
+    border: 1px solid black; 
+    box-shadow: 20px 20px 40px rgba(199, 9, 9, 0.3);
+}
+
+
+.aan{
+    width: 50%;
+}
 .App > h1 {
     text-align: center;
     margin: 1rem 0;
@@ -27,17 +43,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #444;
+    background: #124244;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #333333;
+    border-radius: 20px;
+    margin-bottom: 4px;
 }
 
 .Card--text h1 {
-    color: #ff9900;
+    color: #00ffe1;
 }
 
 .Card--button button {
     background: #f5f6f7;
+    font-size: 1em;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-bottom: 5px solid #333333;
+    font-weight: 800;
     padding: 0.4rem 1rem;
     border-radius: 20px;
     cursor: pointer;
@@ -59,8 +82,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #444;
+    background: #124244;
     margin-bottom: 1rem;
+    border-radius: 20px;
 }
 
 .Form > div {
@@ -72,7 +96,7 @@ body {
 .Form input {
     background: #f5f6f7;
     padding: 0.5rem 1rem;
-    border: 1px solid #ff9900;
+    border: 1px solid rgb(27, 116, 128)255, 221;
     border-radius: 10px;
     display: block;
     margin: 0.3rem 1rem 0 0;
@@ -82,8 +106,9 @@ body {
 }
 
 .Form button {
-    background: #ff9900;
+    background: #2a9a9f;
     color: #fff;
+    margin-top: 25px;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
@@ -98,3 +123,95 @@ body {
 .hide-button {
     display: none;
 }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+  }
+  
+  .wrapper {
+    background: #124244;
+    line-height: 1;
+    /* min-height: 100%;  */
+    display: grid;
+    place-items: center;
+    height: 100%;
+     /* min-height: calc(100vh - 16px); */
+  }
+  
+  .heading{
+    font-family: "Exo", sans-serif;
+    font-size: 5vw;
+    font-weight: 900;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(
+      219deg,
+      var(--color-1) 19%,
+      transparent 19%,
+      transparent 20%,
+      var(--color-2) 20%,
+      var(--color-2) 39%,
+      transparent 39%,
+      transparent 40%,
+      var(--color-3) 40%,
+      var(--color-3) 59%,
+      transparent 59%,
+      transparent 60%,
+      var(--color-4) 60%,
+      var(--color-4) 79%,
+      transparent 79%,
+      transparent 80%,
+      var(--color-5) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .container {
+    padding: 1.5rem;
+    text-align: center;
+    background: radial-gradient(
+        circle at 1.4% 1.4%,
+        var(--color-1) 0.8%,
+        transparent 0.8%
+      ),
+      radial-gradient(circle at 5.5% 3%, var(--color-2) 0.45%, transparent 0.45%),
+      radial-gradient(circle at 2.5% 3.5%, var(--color-3) 0.5%, transparent 0.5%),
+      radial-gradient(
+        circle at 4.5% 1.2%,
+        var(--color-4) 0.25%,
+        transparent 0.25%
+      ),
+      radial-gradient(circle at 98% 98%, var(--color-1) 0.8%, transparent 0.8%),
+      radial-gradient(circle at 95% 95%, var(--color-2) 0.45%, transparent 0.45%),
+      radial-gradient(
+        circle at 94.5% 97.5%,
+        var(--color-3) 0.5%,
+        transparent 0.5%
+      ),
+      radial-gradient(
+        circle at 98.5% 95.5%,
+        var(--color-4) 0.25%,
+        transparent 0.25%
+      );
+  }
+  
+  /* @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 6.5rem;
+    }
+  }
+   */

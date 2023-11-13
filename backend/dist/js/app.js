@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 });
 app.use(routes_1.default);
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
-const uri = "mongodb+srv://shyam2020100:123456780@cluster0.zhnlwok.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://todo-app:reBXeqQvFXD8BjXh@cluster0.f2l08lr.mongodb.net/Todo-DB?retryWrites=true&w=majority";
 const connectDb = (DB_URL) => __awaiter(void 0, void 0, void 0, function* () {
     const DB_OPTIONS = {
         dbName: "Todo",
